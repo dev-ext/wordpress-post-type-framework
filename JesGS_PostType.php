@@ -111,29 +111,15 @@ class JesGS_PostType extends JesGS_FrameWork_Helper
 
     }
 
-    /**
-     * Sets MangaPress_View object for Post Type screens
-     *
-     * @param MangaPress_View $view
-     * @return MangaPress_PostType
-     */
-    public function set_view($view)
-    {
-        $this->_view = $view;
-
-        return $this;
-    }
 
     /**
      * Set object arguments
      *
-     * @param array $args
-     * @return MangaPress_FrameWork_Helper
+     * @param array $args Array of arguments. Optional
+     * @return JesGS_PostType
      */
-    public function set_arguments($args)
+    public function set_arguments($args = array())
     {
-        global $plugin_dir;
-
         $args = array_merge($this->_args, $args);
         extract($args);
 
@@ -141,16 +127,15 @@ class JesGS_PostType extends JesGS_FrameWork_Helper
             = array(
                 'name'               => $this->_label_plural,
                 'singular_name'      => $this->_label_single,
-                'add_new'            => __('Add New ' . $this->_label_single, $plugin_dir),
-                'add_new_item'       => __('Add New ' . $this->_label_single, $plugin_dir),
-                'edit_item'          => __('Edit ' . $this->_label_single, $plugin_dir),
-                'view_item'          => __('View ' . $this->_label_single, $plugin_dir),
-                'search_items'       => __('Search ' . $this->_label_single, $plugin_dir),
-                'not_found'          => __($this->_label_single . ' not found', $plugin_dir),
-                'not_found_in_trash' => __($this->_label_single . ' not found in Trash', $plugin_dir),
-                'parent_item_colon'  => __($this->_label_single . ': ', $plugin_dir),
+                'add_new'            => __('Add New ' . $this->_label_single, MYTHEME_TEXT_DOMAIN),
+                'add_new_item'       => __('Add New ' . $this->_label_single, MYTHEME_TEXT_DOMAIN),
+                'edit_item'          => __('Edit ' . $this->_label_single, MYTHEME_TEXT_DOMAIN),
+                'view_item'          => __('View ' . $this->_label_single, MYTHEME_TEXT_DOMAIN),
+                'search_items'       => __('Search ' . $this->_label_single, MYTHEME_TEXT_DOMAIN),
+                'not_found'          => __($this->_label_single . ' not found', MYTHEME_TEXT_DOMAIN),
+                'not_found_in_trash' => __($this->_label_single . ' not found in Trash', MYTHEME_TEXT_DOMAIN),
+                'parent_item_colon'  => __($this->_label_single . ': ', MYTHEME_TEXT_DOMAIN),
             );
-
 
         $args =
             array(
@@ -186,7 +171,7 @@ class JesGS_PostType extends JesGS_FrameWork_Helper
      * Set object taxonomies
      *
      * @param array $taxonomies
-     * @return MangaPress_PostType
+     * @return JesGS_PostType
      */
     public function set_taxonomies($taxonomies)
     {
@@ -200,7 +185,7 @@ class JesGS_PostType extends JesGS_FrameWork_Helper
      * Must be called before set_arguments()
      *
      * @param array $supports
-     * @return MangaPress_PostType
+     * @return JesGS_PostType
      */
     public function set_support($supports)
     {

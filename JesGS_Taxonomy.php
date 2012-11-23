@@ -74,7 +74,7 @@ class JesGS_Taxonomy extends JesGS_FrameWork_Helper
      * Set object arguments
      *
      * @param array $args
-     * @return MangaPress_FrameWork_Helper
+     * @return JesGS_Taxonomy
      */
     public function set_arguments($args)
     {
@@ -88,18 +88,18 @@ class JesGS_Taxonomy extends JesGS_FrameWork_Helper
                 'labels' => array(
                     'name'                       => $this->_label_plural,
                     'singular_name'              => $this->_label_single,
-                    'search_items'               => __('Search '                . $this->_label_plural, $plugin_dir),
-                    'popular_items'              => __('Popular '               . $this->_label_plural, $plugin_dir),
-                    'all_items'                  => __('All '                   . $this->_label_plural, $plugin_dir),
-                    'parent_item'                => __('Parent '                . $this->_label_single, $plugin_dir),
-                    'parent_item_colon'          => __('Parent '                . $this->_label_single .  ':: ', $plugin_dir),
-                    'edit_item'                  => __('Edit '                  . $this->_label_single, $plugin_dir),
-                    'update_item'                => __('Update '                . $this->_label_single, $plugin_dir),
-                    'add_new_item'               => __('Add New '               . $this->_label_single, $plugin_dir),
-                    'new_item_name'              => __('New '                   . $this->_label_single . ' name', $plugin_dir),
-                    'separate_items_with_commas' => __('Separate '              . $this->_label_plural . ' with commas', $plugin_dir),
-                    'add_or_remove_items'        => __('Add or remove '         . $this->_label_plural, $plugin_dir),
-                    'choose_from_most_used'      => __('Choose from most used ' . $this->_label_plural, $plugin_dir),
+                    'search_items'               => __('Search '                . $this->_label_plural, MYTHEME_TEXT_DOMAIN),
+                    'popular_items'              => __('Popular '               . $this->_label_plural, MYTHEME_TEXT_DOMAIN),
+                    'all_items'                  => __('All '                   . $this->_label_plural, MYTHEME_TEXT_DOMAIN),
+                    'parent_item'                => __('Parent '                . $this->_label_single, MYTHEME_TEXT_DOMAIN),
+                    'parent_item_colon'          => __('Parent '                . $this->_label_single .  ':: ', MYTHEME_TEXT_DOMAIN),
+                    'edit_item'                  => __('Edit '                  . $this->_label_single, MYTHEME_TEXT_DOMAIN),
+                    'update_item'                => __('Update '                . $this->_label_single, MYTHEME_TEXT_DOMAIN),
+                    'add_new_item'               => __('Add New '               . $this->_label_single, MYTHEME_TEXT_DOMAIN),
+                    'new_item_name'              => __('New '                   . $this->_label_single . ' name', MYTHEME_TEXT_DOMAIN),
+                    'separate_items_with_commas' => __('Separate '              . $this->_label_plural . ' with commas', MYTHEME_TEXT_DOMAIN),
+                    'add_or_remove_items'        => __('Add or remove '         . $this->_label_plural, MYTHEME_TEXT_DOMAIN),
+                    'choose_from_most_used'      => __('Choose from most used ' . $this->_label_plural, MYTHEME_TEXT_DOMAIN),
                 ),
                 'public'                => $public,
                 'can_export'            => $can_export,
@@ -122,7 +122,7 @@ class JesGS_Taxonomy extends JesGS_FrameWork_Helper
      * Set taxonomy objects
      *
      * @param array $object_types
-     * @return MangaPress_Taxonomy
+     * @return JesGS_Taxonomy
      */
     public function set_objects($object_types)
     {

@@ -86,7 +86,7 @@ abstract class JesGS_FrameWork_Helper
      * Set the object name
      *
      * @param string $object_name
-     * @return MangaPress_FrameWork_Helper
+     * @return JesGS_FrameWork_Helper
      */
     public function set_name($object_name)
     {
@@ -99,7 +99,7 @@ abstract class JesGS_FrameWork_Helper
      * Set object options
      *
      * @param array $options
-     * @return MangaPress_FrameWork_Helper
+     * @return JesGS_FrameWork_Helper
      */
     public function set_options($options)
     {
@@ -117,7 +117,7 @@ abstract class JesGS_FrameWork_Helper
      * Set the object's singular label
      *
      * @param string $object_single_name
-     * @return MangaPress_FrameWork_Helper
+     * @return JesGS_FrameWork_Helper
      */
     public function set_singlename($object_single_name)
     {
@@ -130,7 +130,7 @@ abstract class JesGS_FrameWork_Helper
      * Set the object's plural label
      *
      * @param string $object_pluralname
-     * @return MangaPress_FrameWork_Helper
+     * @return JesGS_FrameWork_Helper
      */
     public function set_pluralname($object_pluralname)
     {
@@ -144,9 +144,9 @@ abstract class JesGS_FrameWork_Helper
      * Set object arguments
      *
      * @param array $args
-     * @return MangaPress_FrameWork_Helper
+     * @return JesGS_FrameWork_Helper
      */
-    public function set_arguments($args)
+    public function set_arguments($args = array())
     {
         $this->_args = $args;
 

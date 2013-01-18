@@ -9,6 +9,8 @@
  */
 /**
  * JesGS_FrameWork_Helper
+ * This abstract class contains basic properties and methods
+ * used by the PostType and Taxonomy classes.
  *
  * @package JesGS_FrameWork_Helper
  * @author Jess Green <jgreen@psy-dreamer.com>

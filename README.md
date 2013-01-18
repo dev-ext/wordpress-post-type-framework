@@ -1,4 +1,4 @@
-wordpress-post-type-framework
+WordPress Post-type/Taxonomy Framework
 =============================
 A group of classes for creating WordPress custom post-types and taxonomies.
 

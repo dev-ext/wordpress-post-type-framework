@@ -15,26 +15,6 @@
  */
 class JesGS_Taxonomy extends JesGS_FrameWork_Helper
 {
-    /**
-     * Object name
-     *
-     * @var string
-     */
-    protected $_name;
-
-    /**
-     * Object singular (human-readable) label
-     *
-     * @var string
-     */
-    protected $_label_single;
-
-    /**
-     * Object plural (human-readable) label
-     *
-     * @var string
-     */
-    protected $_label_plural;
 
     /**
      * Objects that support this taxonomy

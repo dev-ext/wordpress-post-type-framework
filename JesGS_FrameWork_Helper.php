@@ -15,25 +15,6 @@
  */
 abstract class JesGS_FrameWork_Helper
 {
-    /**
-     * Read-only version of self::$_name
-     *
-     * @var string
-     */
-    public $name;
-
-    /**
-     * Read-only version of self::$_label_single
-     *
-     * @var string
-     */
-    public $label_single;
-
-    /**
-     * Read-only version of self::$_label_plural
-     * @var string
-     */
-    public $label_plural;
 
     /**
      * Object name
@@ -90,7 +71,7 @@ abstract class JesGS_FrameWork_Helper
      */
     public function set_name($object_name)
     {
-        $this->name = $this->_name = $object_name;
+        $this->_name = $object_name;
 
         return $this;
     }
@@ -121,7 +102,7 @@ abstract class JesGS_FrameWork_Helper
      */
     public function set_singlename($object_single_name)
     {
-        $this->label_single = $this->_label_single = $object_single_name;
+        $this->_label_single = $object_single_name;
 
         return $this;
     }
@@ -135,7 +116,7 @@ abstract class JesGS_FrameWork_Helper
     public function set_pluralname($object_pluralname)
     {
 
-        $this->label_plural = $this->_label_plural = $object_pluralname;
+        $this->_label_plural = $object_pluralname;
 
         return $this;
     }

@@ -53,8 +53,6 @@ class JesGS_PostType extends JesGS_FrameWork_Helper
         'menu_position'        => 5,
         'menu_icon'            => '',
         'capability_type'      => 'post',
-        //'capabilities'         => '',
-        //'map_meta_cap'         => false,
         'hierarchical'         => false,
         'supports'             => '',
         'register_meta_box_cb' => '',
@@ -73,11 +71,6 @@ class JesGS_PostType extends JesGS_FrameWork_Helper
     protected $_supports     = array('title');
 
     /**
-     * @var View
-     */
-    protected $_view;
-
-    /**
      * Object init
      *
      * @return void
@@ -86,8 +79,6 @@ class JesGS_PostType extends JesGS_FrameWork_Helper
     {
 
         register_post_type($this->_name, $this->_args);
-
-        add_action('template_include', array($this, 'template_include'));
 
     }
 
@@ -129,8 +120,6 @@ class JesGS_PostType extends JesGS_FrameWork_Helper
                 'menu_position'        => $menu_position,
                 'menu_icon'            => $menu_icon,
                 'capability_type'      => $capability_type,
-                //'capabilities'         => $this->_capabilities,
-                //'map_meta_cap'         => $map_meta_cap,
                 'hierarchical'         => $hierarchical,
                 'supports'             => $supports,
                 'register_meta_box_cb' => array($this, 'meta_box_cb'),
@@ -172,17 +161,6 @@ class JesGS_PostType extends JesGS_FrameWork_Helper
         $this->_supports = $supports;
 
         return $this;
-    }
-
-    /**
-     * Modifies object templates.
-     *
-     * @param string|array $template Template to be included
-     * @return string|array
-     */
-    public function template_include($template)
-    {
-        return $template;
     }
 
     /**

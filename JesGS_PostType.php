@@ -9,7 +9,10 @@
  */
 /**
  * JesGS_PostType
- *
+ * 
+ * @todo Add capabilities, per issue #4
+ * @todo Remove meta_box_cb method, per issue #5
+ * 
  * @package JesGS_PostType
  * @author Jess Green <jgreen@psy-dreamer.com>
  */

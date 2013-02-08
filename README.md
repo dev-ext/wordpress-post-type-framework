@@ -9,5 +9,6 @@ For usage, see example code: https://gist.github.com/4137028
 
 Requires:
 ---------
-WordPress 3.4.2 and higher, PHP 5.3
+* WordPress 3.5.x
+* PHP 5.3
 

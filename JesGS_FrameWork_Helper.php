@@ -1,7 +1,10 @@
 <?php
 /**
  * WordPress_PostType_Framework
- *
+ * 
+ * So wish WordPress would drop PHP 5.2 support.
+ * Namespaces would be very handy
+ * 
  * @package WordPress_PostType_Framework
  * @subpackage JesGS_FrameWork_Helper
  * @author Jess Green <jgreen@psy-dreamer.com>

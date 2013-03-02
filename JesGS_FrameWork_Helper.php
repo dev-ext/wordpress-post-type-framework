@@ -41,7 +41,15 @@ abstract class JesGS_FrameWork_Helper
      * @var string
      */
     protected $_label_plural;
-
+    
+    /**
+     * Text domain string for i8n
+     * Must be set before arguments!
+     * 
+     * @var string
+     */
+    protected $_textdomain = '';
+    
     /**
      * Object arguments
      *
@@ -125,7 +133,14 @@ abstract class JesGS_FrameWork_Helper
 
         return $this;
     }
-
+    
+    public function set_textdomain($textdomain)
+    {
+        $this->_textdomain = $textdomain;
+        
+        return $this;
+    }
+    
     /**
      * Set object arguments
      *

@@ -96,19 +96,19 @@ class JesGS_PostType extends JesGS_FrameWork_Helper
     {
         $args = array_merge($this->_args, $args);
         extract($args);
-
+        
         $labels
             = array(
                 'name'               => $this->_label_plural,
                 'singular_name'      => $this->_label_single,
-                'add_new'            => __('Add New ' . $this->_label_single, MYTHEME_TEXT_DOMAIN),
-                'add_new_item'       => __('Add New ' . $this->_label_single, MYTHEME_TEXT_DOMAIN),
-                'edit_item'          => __('Edit ' . $this->_label_single, MYTHEME_TEXT_DOMAIN),
-                'view_item'          => __('View ' . $this->_label_single, MYTHEME_TEXT_DOMAIN),
-                'search_items'       => __('Search ' . $this->_label_single, MYTHEME_TEXT_DOMAIN),
-                'not_found'          => __($this->_label_single . ' not found', MYTHEME_TEXT_DOMAIN),
-                'not_found_in_trash' => __($this->_label_single . ' not found in Trash', MYTHEME_TEXT_DOMAIN),
-                'parent_item_colon'  => __($this->_label_single . ': ', MYTHEME_TEXT_DOMAIN),
+                'add_new'            => __('Add New ' . $this->_label_single, $this->_textdomain),
+                'add_new_item'       => __('Add New ' . $this->_label_single, $this->_textdomain),
+                'edit_item'          => __('Edit ' . $this->_label_single, $this->_textdomain),
+                'view_item'          => __('View ' . $this->_label_single, $this->_textdomain),
+                'search_items'       => __('Search ' . $this->_label_single, $this->_textdomain),
+                'not_found'          => __($this->_label_single . ' not found', $this->_textdomain),
+                'not_found_in_trash' => __($this->_label_single . ' not found in Trash', $this->_textdomain),
+                'parent_item_colon'  => __($this->_label_single . ': ', $this->_textdomain),
             );
 
         $args =

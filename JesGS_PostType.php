@@ -54,7 +54,7 @@ class JesGS_PostType extends JesGS_FrameWork_Helper
         'show_ui'              => true,
         'show_in_menu'         => true,
         'menu_position'        => 5,
-        'menu_icon'            => '',
+        'menu_icon'            => null,
         'capability_type'      => 'post',
         'hierarchical'         => false,
         'supports'             => false,
@@ -66,12 +66,6 @@ class JesGS_PostType extends JesGS_FrameWork_Helper
         'can_export'           => true,
         'show_in_nav_menus'    => true,
     );
-
-    /**
-     * PostType supports
-     * @var array
-     */
-    protected $_supports     = array('title');
 
     /**
      * Object init
@@ -148,20 +142,6 @@ class JesGS_PostType extends JesGS_FrameWork_Helper
     public function set_taxonomies($taxonomies)
     {
         $this->_taxonomies = $taxonomies;
-
-        return $this;
-    }
-
-    /**
-     * Set object supports
-     * Must be called before set_arguments()
-     *
-     * @param array $supports
-     * @return JesGS_PostType
-     */
-    public function set_support($supports)
-    {
-        $this->_supports = $supports;
 
         return $this;
     }

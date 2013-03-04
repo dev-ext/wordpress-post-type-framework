@@ -166,14 +166,4 @@ class JesGS_PostType extends JesGS_FrameWork_Helper
         return $this;
     }
 
-    /**
-     * Meta-box callback
-     *
-     * @return void
-     */
-    public function meta_box_cb()
-    {
-        // override
-    }
-
 }

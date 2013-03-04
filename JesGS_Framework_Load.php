@@ -47,4 +47,4 @@ class JesGS_Framework_Load
     }
 }
 
-new JesGS_Framework_Load();
+new JesGS_Framework_Load(); // Ideally, this should take place in an action, like after_theme_setup

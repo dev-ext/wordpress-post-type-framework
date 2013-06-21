@@ -58,7 +58,6 @@ class JesGS_Taxonomy extends JesGS_FrameWork_Helper
      */
     public function set_arguments($args)
     {
-        global $plugin_dir;
 
         $args = array_merge($this->_args, $args);
         extract($args);
@@ -87,7 +86,7 @@ class JesGS_Taxonomy extends JesGS_FrameWork_Helper
                 'show_ui'               => $show_ui,
                 'show_tagcloud'         => $show_tagcloud,
                 'hierarchical'          => $hierarchical,
-                'update_count_callback' => '',
+                'update_count_callback' => $update_count_callback,
                 'rewrite'               => $rewrite,
                 'query_var'             => $query_var,
                 'capabilities'          => $capabilities,
